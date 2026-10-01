@@ -1,14 +1,14 @@
 public class Member {
 
     private final String name;
-    private final String grade;
+    private final Grade grade;
 
-    public Member(String name, String grade) {
+    public Member(String name, Grade grade) {
         this.name = name;
         this.grade = grade;
     }
 
-    public String getGrade() {
+    public Grade getGrade() {
         return grade;
     }
 
