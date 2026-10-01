@@ -1,5 +1,5 @@
 public interface DiscountPolicy {
 
-    double getDiscount(Member member, Product product);
+    long getDiscount(Member member, Product product, int quantity);
 
 }

@@ -1,14 +1,14 @@
 public class Product {
 
-    private String name;
-    private final double price;
+    private final String name;
+    private final long price;
 
-    public Product(String name, double price) {
+    public Product(String name, long price) {
         this.name = name;
         this.price = price;
     }
 
-    double getPrice() {
+    long getPrice() {
         return price;
     }
 
