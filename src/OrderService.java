@@ -6,11 +6,10 @@ public class OrderService {
         this.discountPolicy = discountPolicy;
     }
 
-    public Order createOrder(Member member, Product product, int quantity) {
+    public void createOrder(Member member, Product product, int quantity) {
         long discount = discountPolicy.getDiscount(member, product, quantity);
         Order order = new Order(member, product, quantity, discount);
         order.showOrder();
-        return order;
     }
 
 }

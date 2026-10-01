@@ -12,4 +12,8 @@ public class Member {
         return grade;
     }
 
+    public String getName() {
+        return name;
+    }
+
 }
