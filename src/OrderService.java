@@ -7,7 +7,8 @@ public class OrderService {
     }
 
     public Order createOrder(Member member, Product product, int quantity) {
-        Order order = new Order(member, product, quantity, discountPolicy);
+        long discount = discountPolicy.getDiscount(member, product, quantity);
+        Order order = new Order(member, product, quantity, discount);
         order.showOrder();
         return order;
     }

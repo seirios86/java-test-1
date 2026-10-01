@@ -4,13 +4,12 @@ public class Order {
     private final Product product;
     private final int quantity;
     private final long discount;
-    private DiscountPolicy discountPolicy;
 
-    public Order(Member member, Product product, int quantity, DiscountPolicy discountPolicy) {
+    public Order(Member member, Product product, int quantity, long discount) {
         this.member = member;
         this.product = product;
         this.quantity = quantity;
-        this.discount = discountPolicy.getDiscount(member, product, quantity);
+        this.discount = discount;
     }
 
     public void showOrder() {
